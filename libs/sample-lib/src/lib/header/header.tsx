@@ -24,6 +24,12 @@ const StyledHeader = styled('div')(
       font-weight: 900;
       font-size: 24px;
     }
+    @media (max-width: 1024px) {
+      & > h1 {
+        text-align: center;
+        font-size: 12px;
+      }
+    }
   `
 );
 export function Header(props: HeaderProps) {
